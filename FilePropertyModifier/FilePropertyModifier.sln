@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilePropertyModifier", "FilePropertyModifier\FilePropertyModifier.csproj", "{AE391C37-9081-448D-9B6B-78CAC0CA4668}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FilePropertyModifierSetup", "FilePropertyModifierSetup\FilePropertyModifierSetup.vdproj", "{DBB643C2-2DE6-4781-BCBA-DA907E73B505}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{AE391C37-9081-448D-9B6B-78CAC0CA4668}.Debug|x86.Build.0 = Debug|x86
 		{AE391C37-9081-448D-9B6B-78CAC0CA4668}.Release|x86.ActiveCfg = Release|x86
 		{AE391C37-9081-448D-9B6B-78CAC0CA4668}.Release|x86.Build.0 = Release|x86
+		{DBB643C2-2DE6-4781-BCBA-DA907E73B505}.Debug|x86.ActiveCfg = Debug
+		{DBB643C2-2DE6-4781-BCBA-DA907E73B505}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
