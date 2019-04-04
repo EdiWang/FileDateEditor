@@ -28,177 +28,174 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtpCreateTime = new System.Windows.Forms.DateTimePicker();
-            this.btnApply = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnChooseFile = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dtpAccessTime = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dtpModifyTime = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.DtpCreateTime = new System.Windows.Forms.DateTimePicker();
+            this.BtnApply = new System.Windows.Forms.Button();
+            this.OpenFileDig = new System.Windows.Forms.OpenFileDialog();
+            this.TxtFilePath = new System.Windows.Forms.TextBox();
+            this.BtnChooseFile = new System.Windows.Forms.Button();
+            this.LblMessage = new System.Windows.Forms.Label();
+            this.GrpFilePicker = new System.Windows.Forms.GroupBox();
+            this.GrpTimePicker = new System.Windows.Forms.GroupBox();
+            this.DtpAccessTime = new System.Windows.Forms.DateTimePicker();
+            this.LblAccessTime = new System.Windows.Forms.Label();
+            this.DtpModifyTime = new System.Windows.Forms.DateTimePicker();
+            this.LblModifiedTime = new System.Windows.Forms.Label();
+            this.LblCreationTime = new System.Windows.Forms.Label();
+            this.GrpFilePicker.SuspendLayout();
+            this.GrpTimePicker.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtpCreateTime
+            // DtpCreateTime
             // 
-            this.dtpCreateTime.Location = new System.Drawing.Point(82, 22);
-            this.dtpCreateTime.Name = "dtpCreateTime";
-            this.dtpCreateTime.Size = new System.Drawing.Size(200, 20);
-            this.dtpCreateTime.TabIndex = 0;
-            this.dtpCreateTime.ValueChanged += new System.EventHandler(this.dtpCreateTime_ValueChanged);
+            this.DtpCreateTime.Location = new System.Drawing.Point(82, 22);
+            this.DtpCreateTime.Name = "DtpCreateTime";
+            this.DtpCreateTime.Size = new System.Drawing.Size(200, 20);
+            this.DtpCreateTime.TabIndex = 0;
             // 
-            // btnApply
+            // BtnApply
             // 
-            this.btnApply.Location = new System.Drawing.Point(302, 212);
-            this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(75, 25);
-            this.btnApply.TabIndex = 1;
-            this.btnApply.Text = "应用操作";
-            this.btnApply.UseVisualStyleBackColor = true;
-            this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
+            this.BtnApply.Location = new System.Drawing.Point(302, 212);
+            this.BtnApply.Name = "BtnApply";
+            this.BtnApply.Size = new System.Drawing.Size(75, 25);
+            this.BtnApply.TabIndex = 1;
+            this.BtnApply.Text = "应用操作";
+            this.BtnApply.UseVisualStyleBackColor = true;
+            this.BtnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
-            // openFileDialog1
+            // OpenFileDig
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.OpenFileDig.FileName = "OpenFileDig";
             // 
-            // textBox1
+            // TxtFilePath
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 20);
-            this.textBox1.TabIndex = 2;
+            this.TxtFilePath.Location = new System.Drawing.Point(6, 22);
+            this.TxtFilePath.Name = "TxtFilePath";
+            this.TxtFilePath.Size = new System.Drawing.Size(276, 20);
+            this.TxtFilePath.TabIndex = 2;
             // 
-            // btnChooseFile
+            // BtnChooseFile
             // 
-            this.btnChooseFile.Location = new System.Drawing.Point(288, 20);
-            this.btnChooseFile.Name = "btnChooseFile";
-            this.btnChooseFile.Size = new System.Drawing.Size(75, 25);
-            this.btnChooseFile.TabIndex = 3;
-            this.btnChooseFile.Text = "选择文件";
-            this.btnChooseFile.UseVisualStyleBackColor = true;
-            this.btnChooseFile.Click += new System.EventHandler(this.btnChooseFile_Click);
+            this.BtnChooseFile.Location = new System.Drawing.Point(288, 20);
+            this.BtnChooseFile.Name = "BtnChooseFile";
+            this.BtnChooseFile.Size = new System.Drawing.Size(75, 25);
+            this.BtnChooseFile.TabIndex = 3;
+            this.BtnChooseFile.Text = "选择文件";
+            this.BtnChooseFile.UseVisualStyleBackColor = true;
+            this.BtnChooseFile.Click += new System.EventHandler(this.BtnChooseFile_Click);
             // 
-            // label1
+            // LblMessage
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 218);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "居家旅行，杀人灭口，考试作弊，必备神器。";
+            this.LblMessage.AutoSize = true;
+            this.LblMessage.Location = new System.Drawing.Point(21, 218);
+            this.LblMessage.Name = "LblMessage";
+            this.LblMessage.Size = new System.Drawing.Size(231, 13);
+            this.LblMessage.TabIndex = 4;
+            this.LblMessage.Text = "居家旅行，杀人灭口，考试作弊，必备神器。";
             // 
-            // groupBox1
+            // GrpFilePicker
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.btnChooseFile);
-            this.groupBox1.Location = new System.Drawing.Point(14, 13);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(377, 59);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "第一步：选择要修改的文件";
+            this.GrpFilePicker.Controls.Add(this.TxtFilePath);
+            this.GrpFilePicker.Controls.Add(this.BtnChooseFile);
+            this.GrpFilePicker.Location = new System.Drawing.Point(14, 13);
+            this.GrpFilePicker.Name = "GrpFilePicker";
+            this.GrpFilePicker.Size = new System.Drawing.Size(377, 59);
+            this.GrpFilePicker.TabIndex = 5;
+            this.GrpFilePicker.TabStop = false;
+            this.GrpFilePicker.Text = "第一步：选择要修改的文件";
             // 
-            // groupBox2
+            // GrpTimePicker
             // 
-            this.groupBox2.Controls.Add(this.dtpAccessTime);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.dtpModifyTime);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.dtpCreateTime);
-            this.groupBox2.Location = new System.Drawing.Point(14, 79);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(377, 124);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "第二步：选择日期";
+            this.GrpTimePicker.Controls.Add(this.DtpAccessTime);
+            this.GrpTimePicker.Controls.Add(this.LblAccessTime);
+            this.GrpTimePicker.Controls.Add(this.DtpModifyTime);
+            this.GrpTimePicker.Controls.Add(this.LblModifiedTime);
+            this.GrpTimePicker.Controls.Add(this.LblCreationTime);
+            this.GrpTimePicker.Controls.Add(this.DtpCreateTime);
+            this.GrpTimePicker.Location = new System.Drawing.Point(14, 79);
+            this.GrpTimePicker.Name = "GrpTimePicker";
+            this.GrpTimePicker.Size = new System.Drawing.Size(377, 124);
+            this.GrpTimePicker.TabIndex = 6;
+            this.GrpTimePicker.TabStop = false;
+            this.GrpTimePicker.Text = "第二步：选择日期";
             // 
-            // dtpAccessTime
+            // DtpAccessTime
             // 
-            this.dtpAccessTime.Location = new System.Drawing.Point(82, 82);
-            this.dtpAccessTime.Name = "dtpAccessTime";
-            this.dtpAccessTime.Size = new System.Drawing.Size(200, 20);
-            this.dtpAccessTime.TabIndex = 5;
-            this.dtpAccessTime.ValueChanged += new System.EventHandler(this.dtpAccessTime_ValueChanged);
+            this.DtpAccessTime.Location = new System.Drawing.Point(82, 82);
+            this.DtpAccessTime.Name = "DtpAccessTime";
+            this.DtpAccessTime.Size = new System.Drawing.Size(200, 20);
+            this.DtpAccessTime.TabIndex = 5;
             // 
-            // label4
+            // LblAccessTime
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 89);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "访问时间：";
+            this.LblAccessTime.AutoSize = true;
+            this.LblAccessTime.Location = new System.Drawing.Point(7, 89);
+            this.LblAccessTime.Name = "LblAccessTime";
+            this.LblAccessTime.Size = new System.Drawing.Size(61, 13);
+            this.LblAccessTime.TabIndex = 4;
+            this.LblAccessTime.Text = "访问时间：";
             // 
-            // dtpModifyTime
+            // DtpModifyTime
             // 
-            this.dtpModifyTime.Location = new System.Drawing.Point(82, 53);
-            this.dtpModifyTime.Name = "dtpModifyTime";
-            this.dtpModifyTime.Size = new System.Drawing.Size(200, 20);
-            this.dtpModifyTime.TabIndex = 3;
-            this.dtpModifyTime.ValueChanged += new System.EventHandler(this.dtpModifyTime_ValueChanged);
+            this.DtpModifyTime.Location = new System.Drawing.Point(82, 53);
+            this.DtpModifyTime.Name = "DtpModifyTime";
+            this.DtpModifyTime.Size = new System.Drawing.Size(200, 20);
+            this.DtpModifyTime.TabIndex = 3;
             // 
-            // label3
+            // LblModifiedTime
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "修改时间：";
+            this.LblModifiedTime.AutoSize = true;
+            this.LblModifiedTime.Location = new System.Drawing.Point(7, 60);
+            this.LblModifiedTime.Name = "LblModifiedTime";
+            this.LblModifiedTime.Size = new System.Drawing.Size(61, 13);
+            this.LblModifiedTime.TabIndex = 2;
+            this.LblModifiedTime.Text = "修改时间：";
             // 
-            // label2
+            // LblCreationTime
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "创建时间：";
+            this.LblCreationTime.AutoSize = true;
+            this.LblCreationTime.Location = new System.Drawing.Point(7, 30);
+            this.LblCreationTime.Name = "LblCreationTime";
+            this.LblCreationTime.Size = new System.Drawing.Size(61, 13);
+            this.LblCreationTime.TabIndex = 1;
+            this.LblCreationTime.Text = "创建时间：";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 252);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btnApply);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.GrpTimePicker);
+            this.Controls.Add(this.BtnApply);
+            this.Controls.Add(this.GrpFilePicker);
+            this.Controls.Add(this.LblMessage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";
             this.Text = "文件日期修改器 by Edi.Wang ";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.GrpFilePicker.ResumeLayout(false);
+            this.GrpFilePicker.PerformLayout();
+            this.GrpTimePicker.ResumeLayout(false);
+            this.GrpTimePicker.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dtpCreateTime;
-        private System.Windows.Forms.Button btnApply;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnChooseFile;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DateTimePicker dtpAccessTime;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dtpModifyTime;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker DtpCreateTime;
+        private System.Windows.Forms.Button BtnApply;
+        private System.Windows.Forms.OpenFileDialog OpenFileDig;
+        private System.Windows.Forms.TextBox TxtFilePath;
+        private System.Windows.Forms.Button BtnChooseFile;
+        private System.Windows.Forms.Label LblMessage;
+        private System.Windows.Forms.GroupBox GrpFilePicker;
+        private System.Windows.Forms.GroupBox GrpTimePicker;
+        private System.Windows.Forms.DateTimePicker DtpAccessTime;
+        private System.Windows.Forms.Label LblAccessTime;
+        private System.Windows.Forms.DateTimePicker DtpModifyTime;
+        private System.Windows.Forms.Label LblModifiedTime;
+        private System.Windows.Forms.Label LblCreationTime;
     }
 }
 

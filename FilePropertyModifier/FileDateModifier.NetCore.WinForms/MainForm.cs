@@ -18,23 +18,18 @@ namespace FileDateModifier.NetCore.WinForms
             InitializeComponent();
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void BtnChooseFile_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void btnChooseFile_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.Title = "选择一个要修改日期的文件";
-            openFileDialog1.ShowDialog();
-            textBox1.Text = openFileDialog1.FileName;
+            OpenFileDig.Title = "选择一个要修改日期的文件";
+            OpenFileDig.ShowDialog();
+            TxtFilePath.Text = OpenFileDig.FileName;
             try
             {
-                FileInfo fi = new FileInfo(openFileDialog1.FileName);
-                dtpCreateTime.Value = fi.CreationTime;
-                dtpModifyTime.Value = fi.LastWriteTime;
-                dtpAccessTime.Value = fi.LastAccessTime;
-                label1.Text = "原始文件信息已经载入!";
+                var fi = new FileInfo(OpenFileDig.FileName);
+                DtpCreateTime.Value = fi.CreationTime;
+                DtpModifyTime.Value = fi.LastWriteTime;
+                DtpAccessTime.Value = fi.LastAccessTime;
+                LblMessage.Text = "原始文件信息已经载入!";
             }
             catch (Exception ex)
             {
@@ -45,17 +40,17 @@ namespace FileDateModifier.NetCore.WinForms
 
         private void btnApply_Click(object sender, EventArgs e)
         {
-            if (dtpCreateTime.Value > dtpModifyTime.Value)
+            if (DtpCreateTime.Value > DtpModifyTime.Value)
             {
-                DialogResult d = MessageBox.Show("你填写的文件创建日期在修改日期之后，你确信要这样做吗？", "这是咩呀", MessageBoxButtons.YesNo);
+                var d = MessageBox.Show("你填写的文件创建日期在修改日期之后，你确信要这样做吗？", "这是咩呀", MessageBoxButtons.YesNo);
                 if (d == DialogResult.No)
                 {
                     return;
                 }
             }
-            if (dtpCreateTime.Value > dtpAccessTime.Value)
+            if (DtpCreateTime.Value > DtpAccessTime.Value)
             {
-                DialogResult d = MessageBox.Show("你填写的文件创建日期在访问日期之后，你确信要这样做吗？", "这是咩呀", MessageBoxButtons.YesNo);
+                var d = MessageBox.Show("你填写的文件创建日期在访问日期之后，你确信要这样做吗？", "这是咩呀", MessageBoxButtons.YesNo);
                 if (d == DialogResult.No)
                 {
                     return;
@@ -63,15 +58,15 @@ namespace FileDateModifier.NetCore.WinForms
             }
             try
             {
-                string path = openFileDialog1.FileName;
+                var path = OpenFileDig.FileName;
                 if (File.Exists(path))
                 {
-                    FileInfo fi = new FileInfo(path);
+                    var fi = new FileInfo(path);
                     if (!fi.IsReadOnly)
                     {
-                        File.SetCreationTime(path, dtpCreateTime.Value);
-                        File.SetLastWriteTime(path, dtpModifyTime.Value);
-                        File.SetLastAccessTime(path, dtpAccessTime.Value);
+                        File.SetCreationTime(path, DtpCreateTime.Value);
+                        File.SetLastWriteTime(path, DtpModifyTime.Value);
+                        File.SetLastAccessTime(path, DtpAccessTime.Value);
                         MessageBox.Show("修改成功 o(∩_∩)o", "本程序猥琐地笑了");
                     }
                     else
@@ -88,22 +83,6 @@ namespace FileDateModifier.NetCore.WinForms
             {
                 MessageBox.Show("我操，程序发生异常！\n异常消息：" + ex.Message, "马勒戈壁的！");
             }
-
-        }
-
-        private void dtpCreateTime_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpModifyTime_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpAccessTime_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
