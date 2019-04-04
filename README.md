@@ -7,4 +7,4 @@ This is a .NET Core 3.0 migration test project.
 ## SDK
 
 - .NET Core 3.0 Preview 3
-- .NET Framework 4.5
+- .NET Framework 4.7.2
