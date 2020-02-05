@@ -19,7 +19,7 @@
             </Grid.RowDefinitions>
             <Grid>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="BtnSelectFiles" Content="Select File(s) ..." Padding="10,5" Margin="0,0,5,0" Click="BtnSelectFiles_OnClick" />
+                    <Button x:Name="BtnSelectFiles" Content="Add File(s) ..." Padding="10,5" Margin="0,0,5,0" Click="BtnSelectFiles_OnClick" />
                     <Button x:Name="BtnClearFiles" Content="Clear" Padding="10,5" Click="BtnClearFiles_OnClick" />
                 </StackPanel>
             </Grid>

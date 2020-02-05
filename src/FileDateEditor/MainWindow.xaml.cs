@@ -25,12 +25,13 @@ namespace FileDateEditor
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ObservableCollection<FileGridModel> _selectedFiles = new ObservableCollection<FileGridModel>();
+
         public MainWindow()
         {
             InitializeComponent();
+            FilesGrid.ItemsSource = _selectedFiles;
         }
-
-        private ObservableCollection<FileGridModel> _selectedFiles;
 
         private void BtnSelectFiles_OnClick(object sender, RoutedEventArgs e)
         {
@@ -42,16 +43,24 @@ namespace FileDateEditor
                 var files = openFileDialog.FileNames;
                 if (files.Any())
                 {
-                    var fList = (from f in files
-                                 let c = File.GetCreationTime(f)
-                                 let a = File.GetLastAccessTime(f)
-                                 let w = File.GetLastWriteTime(f)
-                                 select new FileGridModel(f, c, a, w)).ToList();
+                    foreach (var f in files)
+                    {
+                        var c = File.GetCreationTime(f);
+                        var a = File.GetLastAccessTime(f);
+                        var w = File.GetLastWriteTime(f);
+                        var m = new FileGridModel(f, c, a, w);
 
-                    _selectedFiles = new ObservableCollection<FileGridModel>(fList);
-                    FilesGrid.ItemsSource = _selectedFiles;
-                    BtnCommitEdit.IsEnabled = true;
+                        if (_selectedFiles.All(p => p.Path != f))
+                        {
+                            _selectedFiles.Add(m);
+                        }
+                    }
                 }
+            }
+
+            if (_selectedFiles.Any())
+            {
+                BtnCommitEdit.IsEnabled = true;
             }
         }
 
