@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FileDateModifier.NetCore.WinForms
+namespace FileDateEditor.WinForms
 {
     public partial class MainForm : Form
     {

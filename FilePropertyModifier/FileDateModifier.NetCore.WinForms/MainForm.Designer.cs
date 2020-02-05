@@ -1,4 +1,4 @@
-﻿namespace FileDateModifier.NetCore.WinForms
+﻿namespace FileDateEditor.WinForms
 {
     partial class MainForm
     {
