@@ -1,7 +1,3 @@
-# FileDateModifier
+# File Date Editor
 
-Modify create time, visit time of a file.
-
-## SDK
-
-- .NET Core 3.1
+Modify creation time, access time and write time of files.
