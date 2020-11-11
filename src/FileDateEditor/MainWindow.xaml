@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileDateEditor"
         mc:Ignorable="d"
-        Title="File Date Editor (.NET Core)" Height="450" Width="800">
+        Title="File Date Editor (.NET 5)" Height="450" Width="800">
     <Grid Margin="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
